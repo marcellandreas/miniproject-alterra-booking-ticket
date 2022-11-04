@@ -1,0 +1,135 @@
+#detailnow-playing .body-content {
+  background-color: #1d1d1d;
+}
+
+#detailnow-playing .container-body {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*Awal dari CSS Section Title*/
+#detailnow-playing .section-title {
+  border-bottom: 1px solid #8c8c8c;
+  /* margin-top: 50px; */
+  padding-bottom: 4px;
+}
+
+/*Awal dari CSS buat container horizontal*/
+#detailnow-playing .horizontal-content {
+  padding-top: 20px;
+  white-space: nowrap;
+  padding-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+/*Awal dari CSS buat content box film*/
+#detailnow-playing .content:first-child {
+  margin-left: 5px;
+}
+
+#detailnow-playing .content {
+  width: 185px;
+  margin-right: 20px;
+  height: 470.906px;
+  position: relative;
+}
+
+#detailnow-playing .content:last-child {
+  margin-right: 5px;
+}
+
+#detailnow-playing .content .position-dekstop {
+  position: absolute;
+  bottom: 0;
+}
+
+#detailnow-playing .content p {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+#detailnow-playing .content .title {
+  font-weight: 700;
+  white-space: normal;
+  color: white;
+}
+
+#detailnow-playing .content .duration {
+  white-space: normal;
+  font-weight: 300;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#detailnow-playing .duration span::after {
+  color: rgba(255, 255, 255, 1);
+  content: "  | ";
+}
+
+#detailnow-playing .content .genre {
+  width: 185px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 300;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#detailnow-playing .content .rating {
+  white-space: normal;
+  font-weight: 300;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#detailnow-playing .content .rating span {
+  color: rgba(255, 255, 255, 1);
+}
+
+#detailnow-playing .content img {
+  width: 185px;
+  border-radius: 10px;
+  transition: all 0.4s;
+}
+
+#detailnow-playing .content:hover img {
+  opacity: 0.4;
+}
+
+#detailnow-playing .content .button {
+  text-decoration-line: none;
+  display: inline-block;
+  color: black;
+  background-color: #e8c700;
+  font-size: 10px;
+  font-weight: 700;
+  white-space: normal;
+  padding: 8px 14px;
+  border-radius: 4px;
+  align-content: end;
+}
+
+#detailnow-playing .content .button:hover {
+  background-color: #c2a813;
+}
+
+#detailnow-playing .content .button:active {
+  background-color: #917c0a;
+}
+/*Akhir dari CSS buat content box film*/
+
+/* new  */
+
+.card-movie {
+  background-color: #1d1d1d;
+  height: 480px;
+  margin: 10px;
+}
+
+.view-image .img {
+  height: 240px;
+  width: 180px;
+}

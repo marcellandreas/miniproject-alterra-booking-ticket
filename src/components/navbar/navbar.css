@@ -1,0 +1,41 @@
+#navbar-container {
+  background-color: #000;
+  height: auto;
+  padding: 10px;
+}
+
+.navbar-menu {
+  list-style: none;
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 18px;
+  padding-right: 10px;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: yellow;
+}
+
+.navbar-menu:hover {
+  background-color: #e8c700;
+  border-radius: 15px;
+  color: #000;
+}
+
+.cart {
+  font-size: 30px;
+}
+
+.user {
+  padding: 20px;
+  background-color: #e8c700;
+  font-size: 20px;
+  border-radius: 10px;
+  text-align: center;
+  border: 2px solid #e8c700;
+}

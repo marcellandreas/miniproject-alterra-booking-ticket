@@ -1,0 +1,147 @@
+.image-ticket {
+  height: 480px;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+.genres {
+  margin-left: 1rem;
+}
+
+/* .big-world .ticket-container {
+  flex-wrap: wrap;
+} */
+
+.genres-item {
+  padding: 0.5rem 1.5rem;
+  border: 2px solid white;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: white;
+  background-color: #1d1d1d;
+}
+
+.big-world {
+  height: 100%;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.card-container {
+  flex: 4;
+}
+.ticket-container > .card-container {
+  background: transparent;
+  border: none;
+}
+.card-ticket {
+  flex-wrap: wrap;
+}
+
+.image-ticket {
+  flex: 2;
+  padding: 20px;
+}
+
+.detail-information-card {
+  flex: 3;
+  padding: 20px;
+  color: white;
+  backdrop-filter: blur(5px) saturate(178%);
+  -webkit-backdrop-filter: blur(5px) saturate(178%);
+  background-color: rgba(74, 74, 74, 0.4);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.select-tiket select {
+  height: 50px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.form-container {
+  flex: 2;
+  background: white;
+  border: 15px inset #7b5145;
+}
+
+.gambar {
+  flex: 2;
+}
+
+.form-container .button {
+  text-decoration-line: none;
+  display: inline-block;
+  color: black;
+  background-color: #e8c700;
+  font-size: 10px;
+  font-weight: 700;
+  border: none;
+  white-space: normal;
+  padding: 8px 14px;
+  border-radius: 4px;
+  align-content: end;
+}
+
+.form-container .button:hover {
+  background-color: #c2a813;
+}
+
+.form-container .button:active {
+  background-color: #917c0a;
+}
+
+/* My Ticket Css Styeling */
+#myticket-container {
+  margin: 50px auto;
+  /* background-color: #c2a813; */
+  border-radius: 20px;
+}
+
+#myticket-container table {
+  /* background-color: #7b5145; */
+  border-radius: 20px;
+  border: none;
+}
+
+.font-icons {
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.my-ticket-container {
+  height: auto;
+  padding-bottom: 50px;
+}
+.my-ticket {
+  height: auto;
+  /* background-color: #1d1d1d; */
+}
+
+.card-myticket {
+  /* padding: 30px; */
+  width: 500px;
+  background-color: #1d1d1d;
+}
+
+.my-ticket-detail .my-ticket-content > p {
+  padding: 0;
+  margin: 0;
+}
+
+.my-ticket-bayar {
+  text-decoration: none;
+  color: lightblue;
+  font-size: 15px;
+}
+
+.mytikect-button {
+  background: transparent !important;
+  border: none !important;
+}
+
+.myticket-action {
+  width: 320px;
+}
