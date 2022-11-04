@@ -1,0 +1,76 @@
+.detail-container {
+  padding-top: 20px;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.detail-page {
+  height: auto;
+  flex-direction: row;
+}
+.detail-image {
+  flex: 2;
+  height: 60vh;
+  padding-right: 50px;
+  border-radius: 20px !important;
+  margin-bottom: 20px;
+}
+
+.detail-about {
+  flex: 4;
+  background-color: #1d1d1d;
+  height: auto;
+  border-radius: 0px 60px 0px 20px;
+  padding: 20px;
+  backdrop-filter: blur(5px) saturate(178%);
+  -webkit-backdrop-filter: blur(5px) saturate(178%);
+  background-color: rgba(74, 74, 74, 0.4);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+.detail-title {
+  border-bottom: 3px solid #e8c700;
+  width: auto;
+}
+
+/* Card Casting */
+.card-casts {
+  /* background-color: #e8c700; */
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* margin-right: 10px; */
+  margin: 0 auto;
+}
+
+.card-casts p {
+  margin: 0;
+  padding: 0;
+}
+
+.card-casts:hover {
+  transform: scale(1.2);
+}
+
+/* Trailer */
+
+.trailer-container {
+  background-color: #1d1d1d;
+  height: auto;
+  padding-bottom: 40px;
+}
+
+.border-bottom {
+  border-bottom: 3px solid #e8c700 !important;
+}
+
+.border-bottom h1 {
+  color: azure;
+}
+
+.detail-trailer iframe {
+  height: 70vh;
+  margin: 0 auto;
+}
