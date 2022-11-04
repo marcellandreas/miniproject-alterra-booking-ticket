@@ -1,0 +1,25 @@
+/* .background-container {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+} */
+
+.hero-text {
+  padding: 20px;
+  padding-left: 80px;
+  height: auto;
+}
+
+.button {
+  text-decoration-line: none;
+  display: inline-block;
+  color: black;
+  background-color: #e8c700;
+  font-size: 10px;
+  font-weight: 700;
+  white-space: normal;
+  padding: 8px 14px;
+  border-radius: 4px;
+  align-content: end;
+}
