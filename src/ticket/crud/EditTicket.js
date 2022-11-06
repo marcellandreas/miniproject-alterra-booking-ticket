@@ -5,7 +5,6 @@ import { useNavigate, useParams } from "react-router-dom";
 import { UpdateTicket, GetDatabyId } from "../../grapql";
 // import axios from "axios";
 import "./edit.css";
-import { useSelector } from "react-redux";
 import NavbarPage from "../../components/navbar";
 const EditTicket = () => {
   const { id } = useParams();
@@ -23,7 +22,6 @@ const EditTicket = () => {
   const [tanggalTayang, setTanggalTayang] = useState("");
   const [jumlahTiket, setJumlahTiket] = useState("");
   const [updateTicket] = useMutation(UpdateTicket);
-  const moviebyid = useSelector((state) => state.databyid.moviebyid);
 
   const UpdateSubmit = () => {
     updateTicket({
@@ -37,7 +35,6 @@ const EditTicket = () => {
     });
     navigate("/my-ticket");
   };
-  // console.log("marcell", updateTicket);
   return (
     <div className="bg-dark">
       <NavbarPage />

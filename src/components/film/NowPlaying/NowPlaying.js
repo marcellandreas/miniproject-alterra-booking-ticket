@@ -33,8 +33,8 @@ const NowPlaying = ({ movies }) => {
                     </p>
                     {/* <p className="genre">Genre: Adventure, Action, Fantasy</p> */}
                     <div className="position-tablet">
-                      <Link to={`/buy-ticket/${data.id}`} className="button">
-                        Buy Ticket
+                      <Link to={`/detail-movie/${data.id}`} className="button">
+                        View Detail
                       </Link>
                     </div>
                   </div>

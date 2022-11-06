@@ -41,6 +41,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  width: 170px;
   /* margin-right: 10px; */
   margin: 0 auto;
 }
@@ -73,4 +74,8 @@
 .detail-trailer iframe {
   height: 70vh;
   margin: 0 auto;
+}
+
+.card-casts .card-detail-image {
+  object-fit: contain;
 }

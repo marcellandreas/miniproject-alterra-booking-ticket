@@ -10,7 +10,7 @@ const DataSlider = ({ data }) => {
             backgroundImage: `url(${process.env.REACT_APP_IMG_URL}/${data.backdrop_path})`,
             paddingTop: "10px",
             minHeight: "70vh",
-            backgroundSize: "cover",
+            // backgroundSize: "cover",
             // width: "100%",
           }}
         >

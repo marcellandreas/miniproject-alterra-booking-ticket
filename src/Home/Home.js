@@ -10,7 +10,6 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
-  //{ current, loading }
   const navigate = useNavigate();
   useEffect(() => {
     auth.onAuthStateChanged((user) => {
@@ -19,7 +18,6 @@ const Home = () => {
       }
     });
   });
-  //current={current} loading={loading}
   return (
     <div classsName="home-container">
       <section>

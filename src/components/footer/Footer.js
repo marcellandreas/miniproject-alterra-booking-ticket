@@ -24,7 +24,11 @@ const FooterPage = () => {
             <Link className="link">
               <li>FAQ</li>
             </Link>
-            <Link className="link">
+            <Link
+              className="link"
+              to="https://api.whatsapp.com/send?phone=6282141840186"
+              rel="noreferrer"
+            >
               <li>Contant</li>
             </Link>
           </ul>

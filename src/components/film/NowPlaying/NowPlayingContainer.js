@@ -18,7 +18,7 @@ const NowPlayingContainer = () => {
         dispatch(setMovies(res.data.results));
       });
   }, []);
-  console.log("data pada movies => ", movies);
+  // console.log("data pada movies => ", movies);
   return (
     <>
       <NowPlaying movies={movies} />

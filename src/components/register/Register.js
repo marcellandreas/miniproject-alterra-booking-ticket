@@ -5,6 +5,7 @@ import { signup, useAuth } from "../../firebase.js";
 import { Button, Form } from "react-bootstrap";
 import { FaRegEyeSlash, FaRegEye } from "react-icons/fa";
 import swal from "sweetalert";
+import { updateProfile } from "firebase/auth";
 
 export default function RegisterPage() {
   const navigate = useNavigate();
@@ -12,6 +13,7 @@ export default function RegisterPage() {
   const currentUser = useAuth();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [displayName, setDisplayName] = useState("");
   const [show, setShow] = useState(false);
   const handleShow = () => {
     setShow(!show);
@@ -21,7 +23,11 @@ export default function RegisterPage() {
     e.preventDefault();
     setLoading(true);
     await signup(email, password)
-      .then(() => {
+      .then((res) => {
+        const user = res.user;
+        updateProfile(user, {
+          displayName: displayName,
+        });
         swal({
           title: `Selamat Datang User`,
           icon: "success",
@@ -29,7 +35,10 @@ export default function RegisterPage() {
         navigate("/");
       })
       .catch((err) => {
-        console.log(err);
+        swal({
+          title: `${err}`,
+          icon: "error",
+        });
       });
     setLoading(false);
   };
@@ -41,6 +50,17 @@ export default function RegisterPage() {
           <Form>
             <div className="card-register">
               <h1 className="text-center">Register / Sign Up</h1>
+              <Form.Group className="mb-4">
+                <Form.Label>Nama</Form.Label>
+                <div className="input-field">
+                  <Form.Control
+                    name="displayName"
+                    value={displayName}
+                    placeholder="Masukan nama anda"
+                    onChange={(e) => setDisplayName(e.target.value)}
+                  />
+                </div>
+              </Form.Group>
               <Form.Group className="mb-4">
                 <Form.Label>Email</Form.Label>
                 <div className="input-field">
