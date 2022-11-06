@@ -5,14 +5,14 @@ import { Image } from "react-bootstrap";
 import NavbarPage from "../navbar";
 import LoadingPage from "../../loading";
 
-const DetailFilmPage = ({ movie, credits, videos, loading }) => {
+const DetailFilmPage = ({ movie, credits, videos, loading, key }) => {
   return (
     <>
       <NavbarPage />
       {loading ? (
         <LoadingPage />
       ) : (
-        <div>
+        <div key={key}>
           {movie && (
             <div
               className="detail-container pb-2 "
@@ -55,7 +55,10 @@ const DetailFilmPage = ({ movie, credits, videos, loading }) => {
                         return (
                           <div className="card-casts m-1" key={i}>
                             <Image
-                              style={{ width: "170px" }}
+                              className="card-detail-image"
+                              style={{
+                                width: "150px",
+                              }}
                               src={`${process.env.REACT_APP_IMG_URL}/${credit.profile_path}`}
                             />
                             <p className="text-center">{credit.name}</p>

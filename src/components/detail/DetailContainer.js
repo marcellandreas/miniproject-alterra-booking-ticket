@@ -60,6 +60,7 @@ const DetailContainer = () => {
         credits={credits}
         videos={videos}
         loading={loading}
+        key={id}
       />
     </>
   );

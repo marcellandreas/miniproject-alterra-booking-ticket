@@ -12,7 +12,6 @@
 .about-text {
   flex: 3;
   padding: 70px;
-  justify-self: center;
 }
 
 .about-image {

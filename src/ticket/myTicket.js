@@ -1,4 +1,4 @@
-import { Button, Image, Stack, Table } from "react-bootstrap";
+import { Button, Image, Stack } from "react-bootstrap";
 import { useMutation, useQuery } from "@apollo/client";
 import { GetDatas, DeleteTicket } from "../grapql";
 import "./ticket.css";
@@ -7,7 +7,6 @@ import NavbarPage from "../components/navbar";
 import swal from "sweetalert";
 import { FaTrash, FaEdit } from "react-icons/fa";
 import LoadingPage from "../loading";
-import image from "../assets/12345.jpg";
 
 const MyTicket = () => {
   const { data: dataTicket, loading, error } = useQuery(GetDatas);
@@ -90,7 +89,7 @@ const MyTicket = () => {
                               DeleteSubmit(data.id);
                             }}
                           >
-                            <FaTrash className="font-icons" />
+                            <FaTrash className="font-icons me-2" />
                           </Button>
                         </div>
                       </div>

@@ -1,20 +1,15 @@
-import { Navbar } from "react-bootstrap";
+import { Image, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { BiCart } from "react-icons/bi";
-import { auth, logout } from "../../firebase";
+import { logout, useAuth } from "../../firebase";
+import logo from "../../assets/MTIC-BR.png";
 
 import "./navbar.css";
-import { onAuthStateChanged } from "firebase/auth";
-import { useEffect, useState } from "react";
+
 import swal from "sweetalert";
 // const currentUser = auth;
 const NavbarPage = () => {
-  const [currentUser, setCurrentUser] = useState();
-
-  useEffect(() => {
-    const unsub = onAuthStateChanged(auth, (user) => setCurrentUser(user));
-    return unsub;
-  }, []);
+  const currentUser = useAuth();
   const handleLogout = async () => {
     await logout()
       .then(() => {
@@ -26,54 +21,64 @@ const NavbarPage = () => {
       .catch((err) => {
         console.log(err);
         swal({
-          title: `Berhasil Logout `,
+          title: `Gagal Melakukan Logout `,
           icon: "error",
         });
       });
   };
+
   return (
     <>
       <Navbar id="navbar-container" className="d-flex flex-column">
         <div className="logo text-white">
-          {" "}
-          M'<span>Film</span>{" "}
+          {/* M'<span>Film</span>{" "} */}
+          <Image src={logo} style={{ width: "50px" }} />
         </div>
         <div className="d-flex flex-row mb-3 text-white flex-wrap justify-content-center align-items-center">
-          <Link to="/" className="navbar-menu active">
+          <Link to="/" className="navbar-menu active m-1">
             <div className="p-2 ">Movies</div>
           </Link>
-          <Link to="/now-playing/more" className="navbar-menu">
+          <Link to="/now-playing/more" className="navbar-menu m-1">
             <div className="p-2 ">Now Playing</div>
           </Link>
-          <Link to="/coming-soon/more" className="navbar-menu">
+          <Link to="/coming-soon/more" className="navbar-menu m-1">
             <div className="p-2 ">Coming Soon</div>
           </Link>
-          <Link to="/my-ticket" className="navbar-menu">
+          <Link to="/my-ticket" className="navbar-menu m-1">
             <div className="p-2 ">
               <BiCart className="me-1 cart " />
               My ticket
             </div>
           </Link>
-          <Link to="/login" className="navbar-menu">
-            <div className="p-2 ">
-              {currentUser ? (
-                <div style={{ display: "none" }}>Login</div>
-              ) : (
-                <div style={{ display: "block" }}>Login</div>
-              )}
-            </div>
-          </Link>
 
-          <Link className="navbar-menu">
+          <Link className="navbar-menu m-1">
             <div
               className="p-2 "
               // disabled={loading || !currentUser}
               onClick={handleLogout}
             >
-              {!currentUser ? "" : "Logout"}
+              {!currentUser ? (
+                <div>
+                  <Link className="navbar-menu" to="/login">
+                    login
+                  </Link>
+                </div>
+              ) : (
+                "Logout"
+              )}
             </div>
           </Link>
-          <div className="p-2 user">{currentUser?.email}</div>
+          <div className="p-1 ">
+            {currentUser?.displayName ? (
+              <div className="user" style={{ display: "block" }}>
+                {currentUser?.displayName}
+              </div>
+            ) : (
+              <div className="user" style={{ display: "none" }}>
+                {currentUser?.displayName}
+              </div>
+            )}
+          </div>
         </div>
       </Navbar>
     </>

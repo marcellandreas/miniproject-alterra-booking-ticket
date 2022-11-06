@@ -1,6 +1,7 @@
 import "./about.css";
 import logoabout from "../../assets/1852.jpg";
 import { Image } from "react-bootstrap";
+import logo from "../../assets/MTIC-BR.png";
 const AboutUsContainer = () => {
   return (
     <>
@@ -15,6 +16,9 @@ const AboutUsContainer = () => {
             />
           </div>
           <div className="about-text">
+            <div className="d-flex justify-content-center align-content-center">
+              <Image src={logo} style={{ width: "100px" }} />
+            </div>
             Best App For Movie Lovers In Indonesia! Movie Entertainment Platform
             From Cinema To Online Movie Streaming Selections.
           </div>
