@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# Mini Project MSIB B3 - Ticket Bioskop
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![alterra-2-mini-project](https://github.com/user-attachments/assets/f99670fd-a423-4539-9449-2df989591c37)
 
-## Available Scripts
+## Overview
+**Mini Project MSIB B3 - Ticket Bioskop** adalah proyek individu yang dikembangkan sebagai bagian dari program **Kampus Merdeka (MSIB Batch 3)** di **Alterra Academy**. Proyek ini bertujuan untuk menciptakan sebuah website interaktif untuk **pemesanan tiket bioskop online**, sehingga memudahkan pengguna dalam memilih film dan memesan tiket dengan nyaman tanpa harus antri.
 
-In the project directory, you can run:
+## Role
+- **Role**: React Developer
+- **Type**: Student Trainee
+- **Team Size**: 1 (Individual Project)
 
-### `npm start`
+## Responsibilities
+Sebagai seorang **React Developer**, tanggung jawab saya termasuk:
+- Mengembangkan antarmuka interaktif dengan **React.js**.
+- Mengintegrasikan **Redux Toolkit** untuk manajemen state.
+- Memanfaatkan **REST API** untuk mengambil data film dan pemesanan tiket.
+- Menggunakan **Bootstrap** untuk mendesain layout yang responsif dan modern.
+- Melakukan deploy aplikasi menggunakan **Surge**.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Key Features
+- **Pemesanan Tiket**: Pengguna dapat memilih film, waktu tayang, dan lokasi bioskop, serta memesan tiket secara online.
+- **Manajemen Pemesanan**: Memanfaatkan **Redux Toolkit** untuk memudahkan pengguna mengelola pesanan mereka.
+- **Responsif**: Website ini dirancang untuk tampil dengan baik di berbagai perangkat, baik desktop maupun mobile.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
+- **HTML5**
+- **CSS3**
+- **JavaScript**
+- **React.js**
+- **Redux Toolkit**
+- **Bootstrap**
+- **REST API**
 
-### `npm test`
+## Project Status
+- **Start Date**: 1 Oktober 2022
+- **End Date**: 1 November 2022
+- **Status**: Completed
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Links
+- **GitHub Repository**: [Mini Project - Ticket Bioskop](https://github.com/marcellandreas/miniproject-alterra-booking-ticket)
+- **Live Demo**: [Visit Website](http://m-tix.surge.sh/)
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Acknowledgements
+Proyek ini merupakan bagian dari **Kampus Merdeka (MSIB Batch 3)** di bawah **Alterra Academy**, yang memberikan saya kesempatan untuk mengembangkan keterampilan sebagai **React Developer**.
